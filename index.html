@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- link icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>To Do List</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- todo header section -->
+        <div class="header">
+            <h1>To Do List</h1>
+            <img src="asset/tasks icon.png" alt="">
+        </div>
+        <form action="">
+            <div class="todo-main-section">
+                <div class="section01">
+                    <input type="text" class="todo-input" placeholder="Add You Task">
+                    <button class="todo-button" type="submit">Add
+                    </button>
+                </div>
+
+                <!-- todo filter section -->
+                <div class="select">
+                    <select name="todos" class="filter-todo">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="incomplete">Incomplete</option>
+                    </select>
+                </div>
+            </div>
+
+        </form>
+        <!-- todo-list section -->
+        <div class="todo-container">
+            <ul class="todo-list"></ul>
+        </div>
+        <!-- link js file -->
+        <script src="./script.js"></script>
+    </div>
+</body>
+
+</html>
